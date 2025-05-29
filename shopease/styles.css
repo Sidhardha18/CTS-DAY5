@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f8fa;      
+  color: #444;                    
+}
+
+header {
+  background-color: #4A90E2;      
+  color: white;
+  padding: 0.1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d1e7ff;                 
+}
+
+.cart-icon {
+  font-size: 1.2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product {
+  background: white;
+  border-radius: 15px;           
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.15); 
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(74, 144, 226, 0.3);
+}
+
+.product img {
+  width: 55%;
+  height: auto;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #4A90E2;      
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #000cf1; 
+    transform: scale(1.1);  
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #133B73;     
+  color: white;
+}
+
+nav a.active {
+  background-color: white;   
+  color: #4A90E2;           
+  padding: 0.4rem 0.8rem;    
+  border-radius: 5px;        
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15); 
+}
+
+
+.hero {
+  background: linear-gradient(135deg, #adceff 0%, #00478d 100%);
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(74, 144, 226, 0.3);
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+
+.about,.contact {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 15px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional for both */
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.logo:hover {
+  color: #56085f;         
+}
